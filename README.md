@@ -6,9 +6,13 @@ podem ser realizadas em qualquer PC.
 
 ## COMANDOS
 
+```pip install -U -r requirements.txt```
+
 Detectar imagens contidas na pasta /test, utilizando o last.pt
 
 ```python detect.py --weights weights/last.pt --source=./test --names=./train/roboflow_data.names```
+
+É possível alterar o nível de confiança, basta pesquisar em `detect.py` por `object confidence threshold` e alterar o valor padrão.
 
 ## TESTES
 
